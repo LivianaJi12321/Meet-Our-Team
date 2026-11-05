@@ -1,12 +1,17 @@
-// The button controls the editable fun fact in index.html.
-const funFactButton = document.getElementById('fun-fact-button');
-const funFact = document.getElementById('fun-fact');
+// Each card's button independently controls its own editable fun fact.
+[
+  ['fun-fact-button', 'fun-fact'],
+  ['mohan-fun-fact-button', 'mohan-fun-fact'],
+].forEach(([buttonId, factId]) => {
+  const button = document.getElementById(buttonId);
+  const fact = document.getElementById(factId);
 
-funFactButton.addEventListener('click', () => {
-  const isExpanded = funFactButton.getAttribute('aria-expanded') === 'true';
-  funFactButton.setAttribute('aria-expanded', String(!isExpanded));
-  funFact.hidden = isExpanded;
-  funFactButton.innerHTML = isExpanded
-    ? 'Show fun fact <span aria-hidden="true">↗</span>'
-    : 'Hide fun fact <span aria-hidden="true">↙</span>';
+  button.addEventListener('click', () => {
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', String(!isExpanded));
+    fact.hidden = isExpanded;
+    button.innerHTML = isExpanded
+      ? 'Show fun fact <span aria-hidden="true">↗</span>'
+      : 'Hide fun fact <span aria-hidden="true">↙</span>';
+  });
 });
