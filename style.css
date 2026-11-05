@@ -1,0 +1,42 @@
+:root { color-scheme: light; --paper: #f7f6eb; --ink: #292d29; --blue: #a5d8e5; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 22px; background: #fff; color: var(--ink); font-family: 'Trebuchet MS', Arial, sans-serif; }
+main { max-width: 1440px; margin: auto; min-height: calc(100vh - 44px); border-radius: 34px; background: var(--paper); padding: 58px 6% 28px; }
+.intro { text-align: center; }
+.eyebrow, .small-label, .card-top { font-size: 10px; font-weight: 800; letter-spacing: 1.8px; }
+.eyebrow { margin: 0 0 30px; }
+.eyebrow span { margin-left: 8px; }
+.heading-wrap { position: relative; width: fit-content; margin: auto; }
+h1 { margin: 0; color: var(--blue); font-family: 'Arial Black', 'Trebuchet MS', sans-serif; font-size: clamp(48px, 7.6vw, 104px); font-weight: 900; line-height: 1.1; letter-spacing: -5px; -webkit-text-stroke: 2px var(--ink); text-shadow: 2px 3px 0 var(--ink); transform: rotate(-3deg); }
+.star { position: absolute; color: var(--blue); -webkit-text-stroke: 1.5px var(--ink); font-size: 68px; line-height: 1; }
+.star-left { top: -26px; left: -75px; transform: rotate(-17deg); }
+.star-right { right: -64px; bottom: -20px; transform: rotate(14deg); }
+.subtitle { margin: 27px 0 49px; font-family: 'Comic Sans MS', 'Trebuchet MS', sans-serif; font-size: 23px; letter-spacing: -.6px; }
+.team-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 25px; max-width: 1110px; margin: auto; align-items: start; }
+.team-card { border: 2px solid var(--ink); border-radius: 13px 17px 14px 19px; background: #fffef7; padding: 17px; box-shadow: 4px 5px 0 #292d29; }
+.your-card { transform: rotate(-1.2deg); }
+.placeholder-card:nth-child(2) { transform: rotate(1deg); margin-top: 13px; }
+.placeholder-card:nth-child(3) { transform: rotate(-.6deg); margin-top: 4px; }
+.card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; letter-spacing: 1.2px; }
+.card-top > span:last-child { font-size: 22px; }
+.portrait, .empty-portrait { position: relative; height: 218px; border: 1.5px solid var(--ink); border-radius: 8px; overflow: hidden; }
+.portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center 42%; display: block; }
+.photo-note { position: absolute; bottom: 12px; right: 9px; padding: 7px 10px; background: var(--paper); border: 1px solid var(--ink); font: 12px 'Comic Sans MS', sans-serif; transform: rotate(-5deg); }
+.card-content { padding: 21px 3px 6px; }
+.small-label { font-size: 9px; letter-spacing: 1.4px; margin: 0 0 10px; }
+h2 { font-size: 26px; letter-spacing: -1px; margin: 0 0 10px; }
+.study { font-size: 14px; line-height: 1.6; margin: 0 0 23px; }
+button { display: flex; align-items: center; justify-content: space-between; width: 100%; border: 1.5px solid var(--ink); border-radius: 6px; background: var(--blue); color: var(--ink); padding: 12px 15px; font: bold 13px 'Trebuchet MS', sans-serif; cursor: pointer; box-shadow: 2px 2px 0 var(--ink); }
+button:hover { background: #bce8f1; transform: translateY(-1px); }
+button:focus-visible { outline: 3px solid #236b89; outline-offset: 5px; }
+button span { font-size: 20px; }
+.fun-fact { margin: 17px 0 0; padding: 12px; border-left: 3px solid var(--blue); font-size: 14px; line-height: 1.6; }
+.empty-portrait { border: 1.5px dashed #7b817a; background: #efefe3; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.doodle { font: 108px/1 Georgia, serif; color: var(--blue); -webkit-text-stroke: 1.5px var(--ink); transform: rotate(12deg); }
+.flower { font-size: 94px; transform: rotate(-12deg); }
+.empty-portrait p { margin: 16px 0 0; font-size: 12px; }
+.placeholder-note { border-top: 1px dashed #999e92; padding-top: 17px; margin: 0; font: 13px/1.6 'Comic Sans MS', 'Trebuchet MS', sans-serif; }
+footer { text-align: center; margin: 48px 0 0; font-size: 11px; line-height: 1.8; }
+footer span { display: inline-block; margin: 0 12px; color: #336d7c; }
+@media (max-width: 850px) { main { padding: 48px 5% 26px; } .team-grid { gap: 17px; } .team-card { padding: 12px; } .portrait, .empty-portrait { height: 180px; } h2 { font-size: 22px; } .star { font-size: 45px; } .star-left { left: -40px; } .star-right { right: -38px; } }
+@media (max-width: 650px) { body { padding: 10px; } main { border-radius: 25px; padding: 44px 24px 26px; } h1 { font-size: clamp(42px, 10vw, 64px); letter-spacing: -3px; -webkit-text-stroke: 1.3px var(--ink); } .star-left { left: -17px; top: -27px; font-size: 34px; } .star-right { right: -14px; bottom: -29px; font-size: 34px; } .subtitle { font-size: 17px; margin-bottom: 34px; } .team-grid { grid-template-columns: 1fr; max-width: 370px; gap: 26px; } .team-card { padding: 17px; } .placeholder-card:nth-child(n) { margin-top: 0; } .portrait, .empty-portrait { height: 235px; } h2 { font-size: 27px; } footer { margin-top: 34px; } footer span { margin: 0 3px; } }

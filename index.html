@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Three teammates, a little introduction, and a few fun facts.">
+  <title>Meet our team</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="intro">
+      <p class="eyebrow">A LITTLE ABOUT US <span aria-hidden="true">✦</span></p>
+      <div class="heading-wrap">
+        <span class="star star-left" aria-hidden="true">☆</span>
+        <h1>Meet our team</h1>
+        <span class="star star-right" aria-hidden="true">☆</span>
+      </div>
+      <p class="subtitle">Different minds. One little team.</p>
+    </header>
+
+    <section class="team-grid" aria-label="Our three teammates">
+      <!-- LIVIANA’S CARD -->
+      <article class="team-card your-card">
+        <div class="card-top"><span>01 / HELLO!</span><span aria-hidden="true">✦</span></div>
+        <div class="portrait">
+          <img src="liviana.jpg" alt="Liviana Ji" width="1944" height="2592">
+        </div>
+        <div class="card-content">
+          <p class="small-label">NICE TO MEET YOU</p>
+          <h2>Liviana Ji</h2>
+          <p class="study">Program: <span>TML, DLT track</span></p>
+          <button id="fun-fact-button" type="button" aria-expanded="false" aria-controls="fun-fact">Show fun fact <span aria-hidden="true">↗</span></button>
+          <p id="fun-fact" class="fun-fact" hidden>I asked people online what my fun fact could be.</p>
+        </div>
+      </article>
+
+      <!-- TEAMMATE TWO: replace this placeholder with their photo, name, and study area. -->
+      <article class="team-card placeholder-card">
+        <div class="card-top"><span>02 / COMING SOON</span><span aria-hidden="true">✧</span></div>
+        <div class="empty-portrait"><span class="doodle" aria-hidden="true">☆</span><p>A new face goes here</p></div>
+        <div class="card-content"><p class="small-label">ROOM FOR ONE MORE</p><h2>Teammate two</h2><p class="study">[Name + area of study]</p><p class="placeholder-note">Your little corner of the team.</p></div>
+      </article>
+
+      <!-- TEAMMATE THREE: replace this placeholder with their photo, name, and study area. -->
+      <article class="team-card placeholder-card">
+        <div class="card-top"><span>03 / COMING SOON</span><span aria-hidden="true">✧</span></div>
+        <div class="empty-portrait"><span class="doodle flower" aria-hidden="true">✿</span><p>A new face goes here</p></div>
+        <div class="card-content"><p class="small-label">SAVED YOU A SPOT</p><h2>Teammate three</h2><p class="study">[Name + area of study]</p><p class="placeholder-note">The team looks better with you.</p></div>
+      </article>
+    </section>
+    <footer><span aria-hidden="true">✦</span> A little of each of us. Something good together. <span aria-hidden="true">✦</span></footer>
+  </main>
+</body>
+</html>
